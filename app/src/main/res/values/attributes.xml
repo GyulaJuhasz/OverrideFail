@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Attributes for the CustomSwitch widget. -->
+    <declare-styleable name="CustomSwitch">
+        <!-- Path of the font in the assets folder. -->
+        <attr name="fontAssetPath" format="string" />
+    </declare-styleable>
+</resources>
