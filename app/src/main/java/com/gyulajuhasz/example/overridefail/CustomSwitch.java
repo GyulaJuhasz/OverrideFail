@@ -32,4 +32,9 @@ public class CustomSwitch extends SwitchCompat {
         typedArray.recycle();
     }
 
+    @Override
+    public void setTypeface(Typeface typeface) {
+        super.setTypeface(typeface);
+        setSwitchTypeface(typeface);
+    }
 }
