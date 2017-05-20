@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <com.gyulajuhasz.example.overridefail.CustomSwitch
+        android:id="@+id/switch_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/switch_text"
@@ -13,11 +14,27 @@
         android:textOn="@string/on"
         android:thumb="@drawable/custom_switch_thumb"
         app:fontAssetPath="font.ttf"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/switch_2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:showText="true"
         app:switchPadding="20dp" />
+
+    <com.gyulajuhasz.example.overridefail.CustomSwitch
+        android:id="@+id/switch_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_text"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:thumb="@drawable/custom_switch_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_1"
+        app:showText="true"
+        app:switchPadding="20dp" />
+
 
 </android.support.constraint.ConstraintLayout>
